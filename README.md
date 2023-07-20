@@ -27,9 +27,12 @@ fn main() {
 
 
     // Use the generated random data to feed the LOWESS algorithm:
-    let res = Lowess::new(&x, &y, 0.25, 0, 0.0);
+    let res = Lowess::new(&x, &y, 0.33333, 0, 0.0);
 
     println!("{:?}", res);
 }
 
 ```
+## Example
+
+![example](https://github.com/u8array/lowess-rs/assets/104523700/e5d34b19-7c5e-48a1-a8f3-4bb86649f261)
